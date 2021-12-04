@@ -2,7 +2,7 @@
   padding: 0 2rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
   .container {
     background-image: url('../public/background.png');
     background-repeat: no-repeat;
@@ -50,15 +50,47 @@
 
 .title {
   margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+  line-height: 1.35;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    margin: 0;
+    line-height: 1.2;
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .title {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 4rem;
+  }
 }
 
 
 .description {
-  margin: 4rem 0;
+  margin: 2rem 0;
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .description {
+    margin: 3rem 0;
+    line-height: 1.5;
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .description {
+    margin: 4rem 0;
+    line-height: 1.5;
+    font-size: 1.5rem;
+  }
 }
 
 .code {
@@ -79,7 +111,7 @@
 }
 
 .card {
-  margin: 1rem;
+  margin: 1rem 0;
   padding: 1.5rem;
   text-align: left;
   color: #ffffff;
@@ -94,9 +126,29 @@
   align-items: center;
 }
 
+@media screen and (min-width: 900px) {
+  .card {
+    margin: 1rem;
+  }
+}
+
 .card h2 {
   margin: 0 0 1rem 0;
-  font-size: 2.5rem;
+  font-size: 1.75rem;
+}
+
+@media screen and (min-width: 768px) {
+  .card h2 {
+    margin: 0 0 1rem 0;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .card h2 {
+    margin: 0 0 1rem 0;
+    font-size: 2.5rem;
+  }
 }
 
 .card p {

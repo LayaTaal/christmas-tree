@@ -66,7 +66,7 @@ export default function Home() {
       <main className={styles.main}>
         <Container maxWidth="xl">
           <Grid container spacing={4}>
-            <Grid item xs={12} md={8}>
+            <Grid item xs={12} lg={8}>
               <h1 className={styles.title}>
                 How many lights do I need for my Christmas tree?
               </h1>
@@ -76,7 +76,7 @@ export default function Home() {
             </Grid>
           </Grid>
           <Grid container spacing={4}>
-            <Grid item xs={12} md={4}>
+            <Grid item xs={12} md={6} lg={4}>
               <form
                 className={styles.form}
                 onSubmit={(e) =>
@@ -141,10 +141,12 @@ export default function Home() {
                 </Button>
               </form>
             </Grid>
-            <Grid item xs={12} md={8}>
-              <Box className={styles.card}>
-                <Result lengthOfLights={lengthOfLights} />
-              </Box>
+            <Grid item xs={12} md={6} lg={8}>
+              {lengthOfLights !== 0 && (
+                <Box className={styles.card}>
+                  <Result lengthOfLights={lengthOfLights} />
+                </Box>
+              )}
             </Grid>
           </Grid>
         </Container>
