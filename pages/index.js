@@ -22,23 +22,16 @@ export default function Home() {
   ) {
     e.preventDefault();
 
-    console.log(treeHeight, treeWidth, rowsOfLights, topOffset);
-
     // Calculate Tree Angle
     const angleRadians = Math.atan(treeWidth / (2 * treeHeight));
     const angleDegrees = (angleRadians * 180) / Math.PI;
     const distanceBetweenRows =
       (treeHeight - topOffset) / rowsOfLights;
-    console.log(`Angle in radians: ${angleRadians}`);
-    console.log(`Angle in degrees: ${angleDegrees}`);
-    console.log(`Distance between rows: ${distanceBetweenRows}`);
 
     let row = 0;
     let currentLength = topOffset;
     let circumferences = [];
     let totalCircumference = 0;
-
-    console.log(`Current Length: ${currentLength}`);
 
     while (currentLength < treeHeight) {
       const rowDiameter = 2 * currentLength * Math.tan(angleRadians);
@@ -47,10 +40,6 @@ export default function Home() {
       currentLength =
         Number(currentLength) + Number(distanceBetweenRows);
       row++;
-      console.log(`Current Row: ${row}`);
-      console.log(`Current Length: ${currentLength}`);
-      console.log(`Current row diameter: ${rowDiameter}`);
-      console.log(circumferences);
     }
 
     setLengthOfLights(Math.round(totalCircumference));
