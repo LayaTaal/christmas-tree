@@ -77,7 +77,7 @@ export default function Home() {
                 How many lights do I need for my Christmas tree?
               </h1>
               <p className={styles.description}>
-                Well...let's find out!
+                Well...let{"'"}s find out!
               </p>
             </Grid>
           </Grid>
