@@ -67,6 +67,11 @@ export default function Home() {
           content="Use this simple tool to figure out how many lights you need for your Christmas tree."
         />
         <link rel="icon" href="/favicon.ico" />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1865138606278093"
+          crossOrigin="anonymous"
+        ></script>
       </Head>
 
       <main className={styles.main}>
