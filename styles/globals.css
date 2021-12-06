@@ -14,3 +14,15 @@ a {
 * {
   box-sizing: border-box;
 }
+
+ul {
+  margin: 2rem 0;
+}
+
+li {
+  margin: 0.5rem 0;
+}
+
+hr {
+  margin: 4rem 0;
+}
